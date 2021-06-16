@@ -50,42 +50,54 @@ reactdom.render(
             me through these magical portals!
           </Text>
           <SimpleGrid width="90%" minChildWidth="120px">
-            <Badge colorScheme="purple" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineInstagram} />
-                <Text>Instagram</Text>
-              </HStack>
-            </Badge>
-            <Badge colorScheme="red" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineYoutube} />
-                <Text>Youtube</Text>
-              </HStack>
-            </Badge>
-            <Badge colorScheme="blue" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineGithub} />
-                <Text>GitHub</Text>
-              </HStack>
-            </Badge>
-            <Badge colorScheme="teal" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineTwitter} />
-                <Text>Twitter</Text>
-              </HStack>
-            </Badge>
-            <Badge colorScheme="teal" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineMedium} />
-                <Text>Medium</Text>
-              </HStack>
-            </Badge>
-            <Badge colorScheme="linkedin" margin="2" maxW="120">
-              <HStack>
-                <Icon as={AiOutlineLinkedin} />
-                <Text>LinkedIn</Text>
-              </HStack>
-            </Badge>
+            <Link href="https://www.instagram.com/_quindarius/">
+              <Badge colorScheme="purple" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineInstagram} />
+                  <Text>Instagram</Text>
+                </HStack>
+              </Badge>
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCEmrDiNqa78dgs1zOR3njCg">
+              <Badge colorScheme="red" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineYoutube} />
+                  <Text>Youtube</Text>
+                </HStack>
+              </Badge>
+            </Link>
+            <Link href="https://github.com/quinwoods">
+              <Badge colorScheme="blue" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineGithub} />
+                  <Text>GitHub</Text>
+                </HStack>
+              </Badge>
+            </Link>
+            <Link href="https://twitter.com/quindarius_">
+              <Badge colorScheme="teal" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineTwitter} />
+                  <Text>Twitter</Text>
+                </HStack>
+              </Badge>
+            </Link>
+            <Link href="https://quindarius.medium.com">
+              <Badge colorScheme="teal" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineMedium} />
+                  <Text>Medium</Text>
+                </HStack>
+              </Badge>
+            </Link>
+            <Link href="https://www.linkedin.com/in/quin-darius-lyles-woods-834558162/">
+              <Badge colorScheme="linkedin" margin="2" maxW="120">
+                <HStack>
+                  <Icon as={AiOutlineLinkedin} />
+                  <Text>LinkedIn</Text>
+                </HStack>
+              </Badge>
+            </Link>
           </SimpleGrid>
         </VStack>
       </Center>
@@ -94,7 +106,7 @@ reactdom.render(
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                Places I have Worked
+                Places I have worked
               </Box>
               <AccordionIcon />
             </AccordionButton>
