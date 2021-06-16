@@ -33,7 +33,11 @@ import {
 import me from "./images/quin.png";
 reactdom.render(
   <ChakraProvider>
-    <Box marginRight={["5%", "15%", "25%"]} marginLeft={["5%", "15%", "25%"]}>
+    <Box
+      marginBottom="5"
+      marginRight={["5%", "15%", "25%"]}
+      marginLeft={["5%", "15%", "25%"]}
+    >
       <Center>
         <VStack>
           <Image src={me} />
