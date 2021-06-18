@@ -168,7 +168,7 @@ reactdom.render(
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                Platforms I have Developed For
+                Platforms I have developed For
               </Box>
               <AccordionIcon />
             </AccordionButton>

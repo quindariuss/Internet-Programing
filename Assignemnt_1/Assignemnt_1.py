@@ -1,0 +1,1 @@
+print (" My name is Quin'darius Lyles-Woods I am a Software Engineer attending Kennesaw State University. Below are some links to where I am on the internet. Feel free to connect with me through these magical portals!")
