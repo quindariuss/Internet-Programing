@@ -6,13 +6,15 @@ import {
   Text,
   VStack,
   Spacer,
+  Box,
   Link,
   Input,
+  ButtonGroup,
   HStack,
   Button,
 } from "@chakra-ui/react";
 
-function App() {
+export function Assignmenttwo() {
   function handleChange(position) {
     const newArray = words.map((item, index) => {
       if (index === position) {
@@ -20,7 +22,7 @@ function App() {
       }
     });
   }
-  const [word, setword] = useState("");
+
   const [words, setwords] = useState([""]);
 
   function returnArray(placetoAdd, wordtoAdd) {
@@ -50,17 +52,13 @@ function App() {
   }
 
   return (
-    <VStack>
-      <Text>hello</Text>
-
-      <Text>{words.length}</Text>
-      <Button onClick={addWord}>Add</Button>
-      <Button onClick={deleteWord}>Delete</Button>
-      <Button onClick={sort}>Sort</Button>
+    <Box p="20">
+      <Heading>Welcome to Assignment Two!</Heading>
       {words.map((item, index) => {
         return (
           <HStack>
             <Input
+              mt="5"
               value={item}
               onChange={(e) => {
                 returnArray(index, e.target.value);
@@ -70,13 +68,11 @@ function App() {
           </HStack>
         );
       })}
-    </VStack>
+      <ButtonGroup pt="10">
+        <Button onClick={addWord}>Add</Button>
+        <Button onClick={deleteWord}>Delete</Button>
+        <Button onClick={sort}>Sort</Button>
+      </ButtonGroup>
+    </Box>
   );
 }
-
-reactdom.render(
-  <ChakraProvider>
-    <App />
-  </ChakraProvider>,
-  document.getElementById("root")
-);
