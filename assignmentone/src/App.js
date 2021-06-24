@@ -1,7 +1,8 @@
 import { Heading } from "@chakra-ui/react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Home";
-import { Assignmenttwo } from "./assignmenttwo";
+import { Assignmentthree } from "./assignmentthree";
+import { AssignmentTwo } from "./Assignment2";
 
 function About() {
   return <Heading>Hello World in about</Heading>;
@@ -15,10 +16,10 @@ export function App() {
     <Router>
       <Switch>
         <Route path="/about">
-          <About />
+          <AssignmentTwo />
         </Route>
         <Route path="/users">
-          <Assignmenttwo />
+          <Assignmentthree />
         </Route>
         <Route path="/">
           <Home />

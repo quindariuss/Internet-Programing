@@ -98,11 +98,19 @@ export function Home() {
                 </HStack>
               </Badge>
             </Link>
-            <RLink to="/users">
+            <RLink to="/about">
               <Badge colorScheme="red" margin="2" maxW="145">
                 <HStack>
                   <Icon as={AiOutlineFolderOpen} />
-                  <Text size="md">Assignment Two</Text>
+                  <Text size="md">Assign. Two</Text>
+                </HStack>
+              </Badge>
+            </RLink>
+            <RLink to="/users">
+              <Badge colorScheme="red" margin="2" maxW="160">
+                <HStack>
+                  <Icon as={AiOutlineFolderOpen} />
+                  <Text size="md">Assign. Three</Text>
                 </HStack>
               </Badge>
             </RLink>
