@@ -1,10 +1,28 @@
-import react from "react";
+import { useState } from "react";
 import reactdom from "react-dom";
-import { ChakraProvider, Heading, Text, Link } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  Heading,
+  Text,
+  Link,
+  Input,
+  HStack,
+  Button,
+} from "@chakra-ui/react";
+
+function App() {
+  const [word, setword] = useState("");
+  return (
+    <HStack>
+      <Input value={word} onChange={(e) => setword(e.target.value)} />
+      <Text>{word.length}</Text>
+    </HStack>
+  );
+}
 
 reactdom.render(
   <ChakraProvider>
-    <Heading>Hello World</Heading>
+    <App />
   </ChakraProvider>,
   document.getElementById("root")
 );
