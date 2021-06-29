@@ -1,1 +1,21 @@
 <h1>This a a webpage to show you palindromes!</h1>
+
+<input type="text" id="bob" />
+<button onclick="testString()">Test Palindrome</button>
+
+<h3>It is :</h3>
+<h3 id="answer"></h3>
+<script>
+  function testString() {
+    x = document.getElementById("bob").value;
+    b = false;
+    document.getElementById("answer").innerHTML = isPalindrome(x);
+  }
+  function isPalindrome(s, i) {
+    return (
+      (i = i || 0) < 0 ||
+      i >= s.length >> 1 ||
+      (s[i] == s[s.length - 1 - i] && isPalindrome(s, ++i))
+    );
+  }
+</script>
