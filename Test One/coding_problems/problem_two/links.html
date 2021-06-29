@@ -1,0 +1,37 @@
+<script>
+  function changecolor(x) {
+    document.getElementById("link1").style.color = "red";
+    document.getElementById("link2").style.color = "red";
+    document.getElementById("link3").style.color = "red";
+    document.getElementById("status").innerHTML = "Hovering";
+  }
+  function normalcolor(x) {
+    document.getElementById("link1").style.color = "black";
+    document.getElementById("link2").style.color = "black";
+    document.getElementById("link3").style.color = "black";
+    document.getElementById("status").innerHTML = "Not Hovering";
+  }
+</script>
+<h1>Welcome to the Links</h1>
+<h2 id="status"></h2>
+<a
+  id="link1"
+  onmouseover="changecolor(this)"
+  onmouseout="normalcolor(this)"
+  href="home.html"
+  >Home</a
+>
+<a
+  id="link2"
+  onmouseover="changecolor(this)"
+  onmouseout="normalcolor(this)"
+  href="palin.html"
+  >Palindrome</a
+>
+<a
+  id="link3"
+  onmouseover="changecolor(this)"
+  onmouseout="normalcolor(this)"
+  href="factorial.html"
+  >Table of Factorials</a
+>

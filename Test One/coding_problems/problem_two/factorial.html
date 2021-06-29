@@ -1,0 +1,15 @@
+<h1>This is a table for your factorials</h1>
+<input type="number" id="number" min="0" max="10" />
+<button onclick="changeNumber()">Submit</button>
+<h3>The Factorial is :</h3>
+<h3 id="answer"></h3>
+<script>
+  function changeNumber() {
+    x = document.getElementById("number").value;
+    document.getElementById("answer").innerHTML = factorial(x);
+  }
+
+  function factorial(n) {
+    return n ? n * factorial(n - 1) : 1;
+  }
+</script>
