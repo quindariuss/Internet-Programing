@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Home";
 import { Assignmentthree } from "./assignmentthree";
 import { AssignmentTwo } from "./Assignment2";
+import { AssignmentFour } from "./assignmentfour";
 
 function About() {
   return <Heading>Hello World in about</Heading>;
@@ -20,6 +21,9 @@ export function App() {
         </Route>
         <Route path="/users">
           <Assignmentthree />
+        </Route>
+        <Route path="/assignmentfour">
+          <AssignmentFour />
         </Route>
         <Route path="/">
           <Home />

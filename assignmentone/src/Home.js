@@ -121,6 +121,14 @@ export function Home() {
                   </HStack>
                 </Badge>
               </RLink>
+              <RLink to="/assignmentfour">
+                <Badge colorScheme="red" margin="2" maxW="160">
+                  <HStack>
+                    <Icon as={AiOutlineFolderOpen} />
+                    <Text size="md">Assign. Four</Text>
+                  </HStack>
+                </Badge>
+              </RLink>
             </SimpleGrid>
           </VStack>
         </Center>
